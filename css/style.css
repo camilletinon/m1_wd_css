@@ -1,4 +1,6 @@
-
+html{
+	scroll-behavior: smooth;
+}
 @font-face {
  font-family: "DecovarAlpha";
  src: url(" font/DecovarAlpha-VF.ttf");
@@ -10,8 +12,15 @@
  src: url("font/MarvinVisionsTrial-Variable.ttf");
 }
 
+@font-face {
+ font-family: "MarvinVisionslight";
+ font-weight: 100;
+ src: url("font/MarvinVisionsTrial-Variable.ttf");
+}
+
 
 .header{
+	position: relative;
 	height: 100vh;
 	display: flex;
 	align-items: center;
@@ -20,7 +29,40 @@
 	background-size: contain;
 }
 
+#textchapo{
+	position: absolute;
+    left: 14%;
+    max-width: 20%;
+    bottom: 15%;
+    font-size: 15px;
+    color: #FBFBFB;
+    font-family: DecovarAlpha;
 
+}
+
+.buttonheader{
+	text-align: center;
+	border: 1px solid #fbfbfb;
+    border-radius: 50%;
+    height: 134px;
+    width: 134px;
+   position: relative;
+   margin: -111px auto 0;
+}
+
+.buttonheader a{
+	font-family: MarvinVisionslight;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    position: absolute;
+    top: 44%;
+    left: 7%;
+}
+
+.title{
+	    margin-top: -24px;
+}
 
 h1{
 	font-family: MarvinVisions;
@@ -100,7 +142,7 @@ a{
 
 .intro{
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 300px;
 }
 
 
