@@ -1,0 +1,35 @@
+
+@font-face {
+ font-family: "DecovarAlpha";
+ src: url(" font/DecovarAlpha-VF.ttf");
+}
+
+@font-face {
+ font-family: "MarvinVisions";
+ font-weight: 400;
+ src: url("font/MarvinVisionsTrial-Variable.ttf");
+}
+
+
+
+
+h2{
+	font-family: MarvinVisions;
+ 	text-align: center;
+
+}
+
+h4{
+	font-family: DecovarAlpha;
+ 	text-align: center;
+}
+
+.abcontainer h2{
+	font-family: MarvinVisions;
+	text-align: left;
+}
+
+
+
+
+
