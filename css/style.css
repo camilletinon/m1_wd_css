@@ -11,25 +11,94 @@
 }
 
 
+.header{
+	height: 100vh;
+}
 
+h1{
+	font-family: MarvinVisions;
+ 	text-align: center;
+ 	font-size: 4em;
+  color: #FBFBFB;
+}
 
 h2{
 	font-family: MarvinVisions;
  	text-align: center;
-
+ 	font-size: 2em;
+  color: #FBFBFB;
 }
 
 h4{
 	font-family: DecovarAlpha;
  	text-align: center;
+ 	  color: #FBFBFB;
 }
 
-.abcontainer h2{
+.filter{
+	text-align: right;
+    padding-right: 20%;
+    margin-top:50px;
+}
+
+.basic-box h2{
 	font-family: MarvinVisions;
-	text-align: left;
+	text-align: center;
+	  color: #FBFBFB;
+}
+
+header{
+  padding: 30px;
+  text-align: center;
+}
+
+header p{
+	font-family: DecovarAlpha;
+  padding: 30px;
+    font-size: 1.5em;
+}
+
+a{
+  text-decoration: none;
+ font-family: DecovarAlpha;
+  transition: all .5s;
+  color: #FBFBFB;
+  margin: 0 10px;
 }
 
 
+.intro{
+	text-align: center;
+	margin-top: 100px;
+}
 
+
+/* FILTRE CSS */
+
+
+
+.abcontainer{
+  width: 70%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 25px;
+}
+
+.box-filter{
+  display: none;
+}
+
+#consonant:target ~ .vowel{
+    display: none;
+}
+
+#vowel:target ~ .consonant{
+    display: none;
+}
+
+#all:target ~ .consonant, .vowel{
+    display: block;
+}
 
 
