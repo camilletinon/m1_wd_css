@@ -1,5 +1,6 @@
 html{
 	scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 @font-face {
  font-family: "DecovarAlpha";
@@ -42,7 +43,7 @@ html{
 
 .buttonheader{
 	text-align: center;
-	border: 1px solid #fbfbfb;
+	
     border-radius: 50%;
     height: 134px;
     width: 134px;
@@ -58,6 +59,47 @@ html{
     position: absolute;
     top: 44%;
     left: 7%;
+}
+
+ .buttonheader a:before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: #fbfbfb;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+ .buttonheader a:hover:before {
+    width: 0;
+}
+
+
+.filter a {
+    position: relative;
+}
+
+.filter a:before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: #fbfbfb;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+ .filter a:hover:before {
+    width: 0;
 }
 
 .title{
@@ -102,7 +144,7 @@ h4{
 hr
 {border: solid #FBFBFB50;
     border-width: 0.1px;
-    position: absolute;
+    position: fixed;
     top: -10px;
    	z-index: -1;
         height: 510vh;
@@ -139,12 +181,73 @@ a{
   margin: 0 10px;
 }
 
+.conteneurtextanim{position: absolute;
+    left: 0;
+    transform: rotate(
+-1deg
+);
+    padding:7px;
+    width: 100vw;
+    background-color: #FBFBFB;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
 
 .intro{
 	text-align: center;
 	margin-top: 300px;
 }
 
+.marquee {
+    display: flex;
+    position: relative;
+    animation: moveLeft 18s linear infinite;
+}
+
+.track p{
+    font-size: 16px;
+    text-transform: uppercase;
+  font-family: DecovarAlpha;
+    white-space: nowrap;
+    min-width: 100%;
+    line-height: 1em;
+    color: #1D1D1D;
+    text-align: center;
+}
+
+.rotate {
+  width: 23%;
+    position: absolute;
+    top: -200px;
+    left: -100px;
+    -webkit-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation: rotate 20s linear infinite;
+    -o-animation: rotate 20s linear infinite;
+    animation: rotate 20s linear infinite;
+   
+}
+
+@keyframes moveLeft{
+  from{
+    transform:translatex(0%);
+    }
+  to{
+    transform:translatex(-100%);
+    }
+}
+@keyframes rotate{
+  0%
+  {
+    transform:rotate(-1turn)
+  }
+
+  to{
+    
+    transform:rotate(0)
+  }
+}
 
 /* FILTRE CSS */
 
