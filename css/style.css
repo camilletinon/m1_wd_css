@@ -146,7 +146,19 @@ h4{
     color: #1D1D1D;
     min-height: 461px;
     background: #FBFBFB;
+    padding: 32%;
 }
+
+.basic-box a{
+  font-family: MarvinVisions;
+    text-align: center;
+    color: #fbfbfb;
+        font-size: 150px;
+}
+
+.basic-box p{
+color: #fbfbfb;
+    font-family: 'DecovarAlpha';}
 
 hr
 {border: solid #FBFBFB50;
@@ -630,10 +642,135 @@ width: fit-content;
     z-index: 10;}
 
 
+.coldeux{
+  border-left: 1px solid #1D1D1D;
+}
 
 
+.coldeux .bottom{
+  border-top: 1px solid #1D1D1D;
+}
+
+.coldeux .bottom p{
+padding-right: 4%;
+    font-family: 'MarvinVisionslight';
+    font-size: 100px;
+    text-align: right;
+}
 
 
+.livre .bottom{
+    border-top: 1px solid #fbfbfb;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    width: 95vw;
+
+}
+
+.colune{
+  position: relative;
+    padding: 20vh 0 0 0;
+}
+
+.colune a {
+    text-decoration: none;
+    font-family: DecovarAlpha;
+    transition: all .5s;
+    color: #1D1D1D;
+    margin: 0 10px;
+    position: absolute;
+    right: 37vw;
+    top: 3vh;
+}
+
+.colune a:before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 29%;
+    height: 1px;
+    display: block;
+    background-color: #121212;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.colune a:hover:before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    display: block;
+    background-color: #121212;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.imgauteur {
+
+    display: block;
+    max-width: 55%;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.colunep {
+    margin-bottom: 2%;
+    max-width: 55%;
+    position: relative;
+    font-size: 15px;
+    font-family: 'DecovarAlpha';
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20%;
+}
+.livre svg{
+  position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.livretext h1{
+  font-family: MarvinVisions;
+    text-align: left;
+    font-size: 4em;
+    color: #fbfbfb;
+    margin-bottom: 1%;
+}
+
+.livretext h4{
+font-family: DecovarAlpha;
+    text-align: left;
+    color: #fbfbfb;
+    font-size: 0.9em;
+    max-width: 38%;}
+
+.livretext {
+  padding: 4vw 6vw;
+position: absolute;
+    bottom: 0;
+    left: 0;}
+
+.livre .top{
+position: relative;
+    bottom: 0;
+    left: 0;}
+
+.coldeux .top h4{
+  position: absolute;
+    bottom: 0;
+    max-width: 75%;
+    font-size: 0.9em;
+    padding: 0 0 3vw 3vh;
+}
+
+.coldeux .top {
+  position: relative;
+    
+}
 
 
 
