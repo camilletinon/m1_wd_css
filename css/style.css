@@ -540,6 +540,12 @@ color: #1D1D1D;
  
 }
 
+.pagination{
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10vh
+}
+
 @keyframes fadeIn1 {
   0% {
     opacity: 0; }
@@ -773,7 +779,7 @@ position: relative;
 .basic-box .conteneurtextanim {
     position: absolute;
     left: 0;
-    transform: translateY(-100%);
+    transform: rotate(-1deg) translateY(-100%);
     padding: 7px;
     width: 100vw;
     opacity: 0;
@@ -782,7 +788,7 @@ position: relative;
     border-bottom: 1px solid;
 }
 
-.basic-box .conteneurtextanim:hover {
+.basic-box:hover .conteneurtextanim {
     position: absolute;
     left: 0;
     transform: translateY(-100%);
@@ -847,4 +853,18 @@ position: relative;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+.overlayplastic{
+  left: 0;
+    position: absolute;
+    height: calc(100%);
+    width: calc(100%);
+    top: 0;
+    background: url(img/plastic.png);
+    padding: 32%;
+    overflow: hidden;
+    
+}
 
+#mobile2{
+  font-size: 23px; 
+}
