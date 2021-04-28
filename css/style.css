@@ -41,6 +41,10 @@ html{
 
 }
 
+.basic-box{
+  position: relative;
+}
+
 .buttonheader{
 	text-align: center;
 	
@@ -155,11 +159,13 @@ h4{
   font-family: MarvinVisions;
     text-align: center;
     color: #fbfbfb;
+    z-index: 1;
         font-size: 150px;
 }
 
 .basic-box p{
 color: #fbfbfb;
+ z-index: 1;
     font-family: 'DecovarAlpha';}
 
 hr
@@ -853,18 +859,119 @@ position: relative;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.overlayplastic{
-  left: 0;
+.overlayplastic {
+    left: -1%;
     position: absolute;
     height: calc(100%);
     width: calc(100%);
     top: 0;
+    background-position: center;
     background: url(img/plastic.png);
     padding: 32%;
+    background-size: cover;
     overflow: hidden;
-    
+    transform: rotate(-1deg);
+    z-index: 1;
 }
 
 #mobile2{
   font-size: 23px; 
 }
+
+
+
+/*Mobile*/
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+h1 {
+font-family: MarvinVisions;
+text-align: center;
+font-size: 3em;
+color: #FBFBFB;
+}
+
+
+.rotate {
+width: 72%;
+position: absolute;
+top: -166px;
+left: -100px;
+-webkit-transform-origin: center center;
+-o-transform-origin: center center;
+transform-origin: center center;
+-webkit-animation: rotate 20s linear infinite;
+-o-animation: rotate 20s linear infinite;
+animation: rotate 20s linear infinite;
+}
+
+#textchapo {
+position: absolute;
+left: 14%;
+max-width: 77%;
+bottom: 15%;
+font-size: 12px;
+color: #FBFBFB;
+font-family: DecovarAlpha;
+}
+
+.intro {
+text-align: center;
+margin-top: 100px;
+}
+
+.footer .top a {
+font-family: MarvinVisions;
+font-size: 28px;
+color: #FBFBFB;
+position: relative;
+margin: 0px;
+
+}
+
+h3 {
+font-family: MarvinVisions;
+font-size: 36px;
+color: #FBFBFB;
+}
+
+.footer .bottom a {
+font-size: 14px;
+}
+
+.footer .top {
+padding: 20vh 4% 0 4%;
+margin: auto;
+}
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+#textchapo {
+position: absolute;
+left: 14%;
+max-width: 36%;
+bottom: 15%;
+font-size: 12px;
+color: #FBFBFB;
+font-family: DecovarAlpha;
+}
+
+.rotate {
+width: 28%;
+position: absolute;
+top: -100px;
+left: -79px;
+-webkit-transform-origin: center center;
+-o-transform-origin: center center;
+transform-origin: center center;
+-webkit-animation: rotate 20s linear infinite;
+-o-animation: rotate 20s linear infinite;
+animation: rotate 20s linear infinite;
+}
+
+}
+
+
+
+
+
