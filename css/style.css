@@ -150,7 +150,7 @@ h4{
     color: #1D1D1D;
     min-height: 461px;
     background: #FBFBFB;
-    padding: 32%;
+       padding: 32% 10%;
     overflow: hidden;
     position: relative;
 }
@@ -463,7 +463,7 @@ a{
 }
 
 .corps .auteur{
-
+  display: flex;
   height: 100vh;
   width: 95vw;
   position: relative;
@@ -505,11 +505,11 @@ color: #1D1D1D;
 }
 
   .titleanimate {
-    padding: 8%;
-    width: fit-content;
-    position: absolute;
-    right: 0;
-
+padding: 8%;
+width: fit-content;
+position: absolute;
+right: 0;
+transform: translateX(-20%);
 }
 
 .alternatelivre{
@@ -544,6 +544,10 @@ color: #1D1D1D;
   
     color: #FBFBFB;
  
+}
+
+.dividerletter{
+  width: 95vw;height: 90vh
 }
 
 .pagination{
@@ -741,6 +745,11 @@ padding-right: 4%;
     bottom: 0;
 }
 
+.coldeux .top p{
+  width: 45vw;
+height: 90vh;
+}
+
 .livretext h1{
   font-family: MarvinVisions;
     text-align: left;
@@ -814,6 +823,9 @@ position: relative;
     animation: moveRight 50s linear infinite;
 }
 
+.dividerauteur{
+  height:10vh;
+}
 
 @keyframes moveRight{
   from{
@@ -878,6 +890,11 @@ position: relative;
   font-size: 23px; 
 }
 
+.header {
+   
+    height: 100vh;
+   
+}
 
 
 /*Mobile*/
@@ -948,6 +965,170 @@ padding: 20vh 4% 0 4%;
 margin: auto;
 }
 
+.lettre .conteneurtextanim {
+position: absolute;
+overflow: hidden;
+
+border-bottom: 1px solid #FBFBFB;
+top: 0;
+left: 0;
+transform: rotate(0deg);
+padding: 12px;
+z-index: 9999;
+background-color: #1D1D1D;}
+
+.lettre .marquee {
+display: flex;
+position: relative;
+animation: moveRight 8s linear infinite;
+}
+
+.corps {
+display: block;
+}
+
+.lettre {
+
+overflow-y: visible;
+}
+
+.livretext {
+padding: 4vw 6vw;
+position: relative;
+bottom: 0;
+left: 0;
+margin-top: -10vh;
+}
+
+.titleanimate {
+padding: 8%;
+width: fit-content;
+position: relative;
+right: 0;
+top: 10%;
+padding-top: 23%;
+transform: translateX(0%);
+}
+
+.lettre h1 {
+font-family: MarvinVisions;
+text-align: left;
+font-size: 3em;
+color: #1D1D1D;
+}
+
+.corps .auteur {
+height: fit-content;
+
+display: block;
+position: relative;
+}
+
+.coldeux .top h4 {
+position: absolute;
+top: 10vw;
+max-width: 75%;
+font-size: 0.9em;
+padding: 0 0 3vw 3vh;
+}
+
+.coldeux .top {
+position: relative;
+padding-bottom: 10%;
+}
+
+.livretext h4 {
+font-family: DecovarAlpha;
+text-align: left;
+color: #fbfbfb;
+font-size: 0.9em;
+max-width: 90%;
+}
+
+.livre .bottom {
+border-top: 1px solid #fbfbfb;
+position: absolute;
+right: 0;
+bottom: -1px;
+width: 100vw;
+}
+
+.livretext h1 {
+display: none;
+}
+
+
+.corps .livre {
+width: 100vw;
+z-index: 20;
+background: #1D1D1D;
+position: relative;
+}
+
+.colune {
+position: relative;
+padding: 20vh 0 0 0;
+height: 100vh;
+}
+
+.corps .auteur {
+display: block;
+height: fit-content;
+width: 100vw;
+position: relative;
+}
+
+.imgauteur {
+display: block;
+max-width: 90%;
+height: auto;
+margin: auto;
+position: relative;
+}
+
+.colunep {
+margin-bottom: 2%;
+max-width: 89%;
+margin-top: 9vh;
+position: relative;
+font-size: 15px;
+font-family: 'DecovarAlpha';
+margin-right: auto;
+margin-left: auto;
+padding-right: 20%;
+}
+
+.colune a {
+text-decoration: none;
+font-family: DecovarAlpha;
+transition: all .5s;
+color: #1D1D1D;
+margin: 0 10px;
+right: 0;
+top: 0;
+position: relative;}
+
+
+.coldeux .top p{
+  width: 45vw;
+height: 71vh;
+}
+
+
+.discoverbook{
+  display: none;
+}
+
+.dividerletter{
+  width: 95vw;height: 50vh
+}
+
+.basic-box .marquee {
+display: flex;
+position: relative;
+animation: moveRight 10s linear infinite;
+}
+
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
@@ -974,6 +1155,46 @@ transform-origin: center center;
 animation: rotate 20s linear infinite;
 }
 
+.coldeux .top p {
+width: 45vw;
+height: 88vh;
+}
+
+.dividerauteur{
+  height:12vh;
+}
+
+.colune a {
+text-decoration: none;
+font-family: DecovarAlpha;
+transition: all .5s;
+color: #1D1D1D;
+margin: 0 10px;
+position: absolute;
+right: 32vw;
+top: 3vh;
+}
+
+.livre svg {
+position: absolute;
+right: 0;
+bottom: -5%;
+width: 25%;
+}
+.titleanimate {
+padding: 8%;
+width: fit-content;
+position: absolute;
+right: 0;
+transform: translateX(-27%);
+}
+
+.lettre h1 {
+font-family: MarvinVisions;
+text-align: left;
+font-size: 4em;
+
+}
 }
 
 
